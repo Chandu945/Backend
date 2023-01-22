@@ -21,7 +21,7 @@ app.use("/api/v1",regroute)
 app.use("/api/v1",loginroute)
 
 
-app.get("/api/v1", async (req, res) => {
+app.get("/", async (req, res) => {
     res.status(201).json({result: await model.find()})
 })
 
